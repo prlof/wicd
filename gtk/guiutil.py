@@ -162,7 +162,7 @@ class LabelEntry(gtk.HBox):
     def set_text(self, text):
         """ Set text of the GtkEntry. """
         # For compatibility...
-        self.entry.set_text(text)
+        self.entry.set_text(str(text))
 
     def get_text(self):
         """ Get text of the GtkEntry. """
